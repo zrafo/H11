@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneles Divididos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centra los paneles horizontalmente */
+            padding: 20px; /* Agrega un espacio alrededor del contenedor */
+        }
+
+        /* Estilos de los paneles */
+        .panel {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            box-sizing: border-box;
+            background-color: #f9f9f9; /* Color de fondo más claro para mejorar la legibilidad */
+        }
+
+        /* Estilos específicos para formularios */
+        .formulario {
+            background-color: #f0f0f0; /* Color de fondo para los formularios */
+        }
+
+        /* Estilos específicos para textos */
+        .texto {
+            background-color: #e0e0e0; /* Color de fondo para los textos */
+        }
+
+        /* Estilos para las imágenes */
+        .imagen {
+            text-align: center;
+        }
+
+        .imagen img {
+            max-width: 100%;
+            max-height: 200px;
+        }
+
+        /* Estilos para los elementos de formulario */
+        form {
+            margin: 0; /* Elimina el margen predeterminado de los formularios */
+            padding: 0 20px; /* Agrega un margen interno a los formularios */
+        }
+
+        label {
+            display: block; /* Coloca las etiquetas en una nueva línea */
+            margin-bottom: 5px; /* Agrega un pequeño espacio entre etiquetas y campos de entrada */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%; /* Ajusta el ancho de los campos de entrada al 100% */
+            margin-bottom: 10px; /* Agrega un espacio entre los campos de entrada */
+            padding: 5px; /* Agrega un espacio interno a los campos de entrada */
+            box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px; /* Ajusta el relleno del botón de enviar */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            background-color: #007bff; /* Color de fondo del botón */
+            color: #fff; /* Color del texto del botón */
+            border: none; /* Elimina el borde del botón */
+            border-radius: 5px; /* Agrega bordes redondeados al botón */
+            transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Cambia el color de fondo del botón al pasar sobre él */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel formulario">
+            <h2>Formulario 1</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="panel texto">
+            <h2>Texto 1</h2>
+            <p>texto aleatorio texto aleatorio texto aleatorio texto aleatorio texto aleatorio texto aleatorio texto aleatorio texto aleatorio texto aleatorio </p>
+        </div>
+		
+        <div class="panel imagen">
+            <h2>Imagen de Internet</h2>
+            <img src="https://via.placeholder.com/400" alt="Imagen de ejemplo">
+        </div>
+    </div>
+</body>
+</html>
