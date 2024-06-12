@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h2>Iniciar Sesión</h2>
+            <form action="dashboard.html" method="post">
+                <div class="input-group">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Correo Electrónico</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Contraseña</label>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <div class="additional-options">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="#">Crear cuenta</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
